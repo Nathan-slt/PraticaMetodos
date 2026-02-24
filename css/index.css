@@ -125,6 +125,15 @@ span:hover{
     filter: drop-shadow(0 0 30px #b71f57);
 }
 
+.card-game{
+    width: 25rem;
+    height: auto;
+    box-sizing: border-box;
+    border-color: #b71f57;
+    
+
+}
+
 
 
 
