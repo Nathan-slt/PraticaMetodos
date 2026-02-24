@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:  "Montserrat", sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #111314;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+span{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-right: 15rem;
+    text-shadow: 2px 2px 2px #b71f57
+}
+
+span:hover{
+    text-shadow: 3px 3px 1px #007190 ;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.barra{
+    max-width: max-content;
+    margin: auto;
+    padding: 1rem 10rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1b1d1f;
+    text-transform: uppercase;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+    font-weight: 700;
+}
+
+.menu a:hover{
+    color: #b71f57;
+    transition: 0.5s;
+}
+
+.login{
+    margin-left: 14rem;
+    width: auto;
+    height: auto;
+    padding: 1.1rem;
+    background-color: #b71f57;
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+.login:hover{
+    background-color: #007190;
+    transition: 0.7s;
+}
+
+
+.banner{
+    display: flex;
+    align-items: center;      
+    justify-content: space-between; 
+    padding: 3rem 13.8rem;      
+}
+
+.banner-text{
+    max-width: 500px;
+}
+
+.banner-text h1{
+    font-size: 2.5rem;
+    margin-bottom: .5rem;   
+    text-transform: uppercase;
+}
+
+.banner-text p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.banner-text{
+    max-width: 500px;
+}
+
+.banner-text h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.banner-text p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.banner img{
+    width: 30rem;
+    height: auto;
+}
+
+
+
+
+
+
