@@ -11,7 +11,7 @@ html{
     font-family:  "Montserrat", sans-serif;
     font-weight: 300;
     color: white;
-    background-color: #111314;
+    background: linear-gradient(135deg, #111314, #1c4286);
 }
 
 a{
@@ -29,8 +29,8 @@ span{
 
 span:hover{
     text-shadow: 3px 3px 1px #007190 ;
-    font-size: 1.5rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .barra{
@@ -63,14 +63,14 @@ span:hover{
     width: auto;
     height: auto;
     padding: 1.1rem;
-    background-color: #b71f57;
+    background: linear-gradient(90deg, #b71f57, #b71f57);
     border-radius: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .login:hover{
-    background-color: #007190;
-    transition: 0.7s;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #007190;
 }
 
 
@@ -87,13 +87,14 @@ span:hover{
 
 .banner-text h1{
     font-size: 2.5rem;
-    margin-bottom: .5rem;   
+    margin-bottom: 0.1rem;   
     text-transform: uppercase;
 }
 
 .banner-text p{
-    font-size: 1rem;
-    line-height: 1.6;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 2;
 }
 
 .banner-text{
@@ -103,16 +104,25 @@ span:hover{
 .banner-text h1{
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-shadow: 0 0 10px #1c4286;
 }
 
+
 .banner-text p{
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #ffffff;
 }
 
 .banner img{
     width: 30rem;
-    height: auto;
+    filter: drop-shadow(0 0 20px #007190);
+    transition: 0.5s;
+}
+
+.banner img:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 30px #b71f57);
 }
 
 
