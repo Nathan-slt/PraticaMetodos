@@ -15,14 +15,13 @@
 			<div class="signup">
 				<form>
 					<label for="chk" aria-hidden="true">Cadastro</label>
-					<input type="text" name="txt" placeholder="Nome de usuário" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-          			<input type="number" name="broj" placeholder="Telefone" required="">
-					<input type="password" name="pswd" placeholder="Senha" required="">
-					<a href="index.html"> 
-						<button>Cadastro</button>
-					</a>
+					<input type="text" name="txt" id="nome" placeholder="Nome de usuário" required="">
+					<input type="email" name="email" id="email" placeholder="Email" required="">
+          			<input type="number" name="broj" id="telefone" placeholder="Telefone" required="">
+					<input type="password" name="pswd" id="senha" placeholder="Senha" required=""> 
+					<button type="button" onclick="validarCadastro()">Cadastro</button>
 				</form>
+				<p id="mensagem1"></p>
 			</div>
 
 			<div class="login">

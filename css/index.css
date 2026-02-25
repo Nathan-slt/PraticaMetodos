@@ -43,6 +43,8 @@ span:hover{
     justify-content: space-between;
     background-color: #1b1d1f;
     text-transform: uppercase;
+    position: fixed;
+    z-index: 100;
 }
 
 
@@ -125,17 +127,54 @@ span:hover{
     filter: drop-shadow(0 0 30px #b71f57);
 }
 
-.card-game{
-    width: 25rem;
-    height: auto;
-    box-sizing: border-box;
-    border-color: #b71f57;
-    
+/* Card dos Jogos */
 
+section{
+    display: flex;
+    justify-content: space-between; 
+    gap: 1.2rem;
+    padding: 2rem 3rem;
+    flex-wrap: wrap;
+}
+.card-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.card-game h2{
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-shadow: 0 0 8px #1c4286;
 }
 
+.card-game img{
+    width: 17rem;
+    height: auto;
+}
 
+.card{
+    min-height: 25rem;
+    width: 20rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: 0.4s ease;
+}
 
+.card:hover{
+    border: 1px solid #b71f57;
+    box-shadow: 
+        0 0 20px #b71f57,
+        0 0 40px rgba(183, 31, 87, 0.5);
 
-
+    transform: translateY(-10px);
+}
 
