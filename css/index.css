@@ -24,11 +24,11 @@ span{
     font-size: 1.4rem;
     font-weight: 700;
     margin-right: 15rem;
-    text-shadow: 2px 2px 2px #b71f57
+    text-shadow: 2px 2px 5px #b71f57
 }
 
 span:hover{
-    text-shadow: 3px 3px 1px #007190 ;
+    text-shadow: 3px 3px 5px #007190 ;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -57,6 +57,7 @@ span:hover{
 
 .menu a:hover{
     color: #b71f57;
+    text-shadow: 0 0 3px #b71f57;
     transition: 0.5s;
 }
 
@@ -129,6 +130,21 @@ span:hover{
 
 /* Card dos Jogos */
 
+.consoles{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    font-size: 2.1rem;
+    text-shadow: 0 0 8px #1c4286;
+}
+
+.consoles:hover{
+    text-shadow: 0 2px 10px #b71f57 ;
+}
+
 section{
     display: flex;
     justify-content: space-between; 
@@ -167,14 +183,12 @@ section{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     color: white;
     transition: 0.4s ease;
+    margin-bottom: 5rem;
 }
 
 .card:hover{
     border: 1px solid #b71f57;
-    box-shadow: 
-        0 0 20px #b71f57,
-        0 0 40px rgba(183, 31, 87, 0.5);
-
+    box-shadow:0 0 20px #b71f57,0 0 40px rgba(183, 31, 87, 0.5);
     transform: translateY(-10px);
 }
 
