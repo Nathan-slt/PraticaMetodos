@@ -6,7 +6,7 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #911744, #030a16, #111314);
+	background: linear-gradient(to bottom, #1c4286, #111314);
 }
 .main{
 	width: 350px;
@@ -15,8 +15,15 @@ body{
 	overflow: hidden;
 	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
 	border-radius: 10px;
-	box-shadow: 5px 20px 50px #000;
+	box-shadow: 0 0 20px #007190;
+	
 }
+
+.main:hover{
+	box-shadow:0 0 50px #b71f57,0 0 40px rgba(183, 31, 87, 0.5);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;  opacity: 1;
+}
+
 #chk{
 	display: none;
 }
@@ -75,7 +82,7 @@ button:hover{
 	transition: .8s ease-in-out;
 }
 .login label{
-	color: #911744;
+	color: #1c4286;
 	transform: scale(.6);
 }
 
