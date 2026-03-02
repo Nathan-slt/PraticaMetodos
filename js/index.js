@@ -23,3 +23,19 @@ function validarCadastro() {
         mensagem1.style.color = "red";
     }
 }
+
+function testeGET(){
+
+}
+
+function testePOST(){
+
+}
+
+function testePUT(){
+
+}
+
+function testeDELETE(){
+    
+}
