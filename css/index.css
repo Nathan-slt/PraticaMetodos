@@ -29,7 +29,8 @@ span{
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 700;
-    text-shadow: 2px 2px 5px #b71f57
+    text-shadow: 2px 2px 5px #b71f57;
+    margin-top: -1rem;
 }
 
 span:hover{
@@ -265,6 +266,7 @@ section{
     color: white;
     transition: 0.4s ease;
     margin-bottom: 5rem;
+    z-index: 99;
    
 }
 
