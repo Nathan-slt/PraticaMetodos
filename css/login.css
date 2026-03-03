@@ -97,8 +97,15 @@ button:hover{
 	transform: scale(.6);
 }
 
-#mensagem1{
+#mensagem1 {
 	color: greenyellow;
+	align-items: center;
+	margin-left: 3.5rem;
+	margin-top: -2.2rem;
+}
+
+#mensagem2 {
+	color: rgb(0, 3, 102);
 	align-items: center;
 	margin-left: 3.5rem;
 	margin-top: -2.2rem;

@@ -11,7 +11,6 @@ async function PUTdados(event) {
 
     console.log("PUT =", dados);
     
-            console.log("Edição efetuada!");
-            document.getElementById('mensagem2').style.color = "green"
+    document.getElementById("mensagem2").innerText = "Dados atualizados!";
 
 } 
