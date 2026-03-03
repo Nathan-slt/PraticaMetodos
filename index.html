@@ -17,7 +17,7 @@
     <div class="menu">
         <a href="#banner">Início</a>
         <a href="#consoles">Catálogo</a>
-        <a href="#sobre-coment">Sobre</a>
+        <a href="#forum-coment">Jogos</a>
     </div>
 
     <a class="login" href="html/login.html">Login</a>
@@ -49,7 +49,6 @@
             <div class="card-game">
                 <img src="assets/images/set-of-console-game-device-handheld-portable-free-png.png"  width="700rem" height="auto" alt="">
                 <h2>Nintendo Switch</h2>
-                    <hr/>
             </div>
         </div>
 
@@ -71,30 +70,27 @@
     </section>
 
     <!-- Sobre -->
-     <h2 class="comentarios" id="sobre-coment">Deixe aqui seu comentário</h2>
-        <section class="sobre">
-            <div class="banner-comentario">
-                <div class="texto">
-                    <h2>
-                       Deixe aqui seu comentário sobre a nossa página
-                    </h2>
+     <h2 class="joguinhos" id="forum-coment">jogos</h2>
+        <section class="forum">
+            <div class="banner-jogos">
+                <div class="container">    
+                    
+                    <div class="search-box">
+                        <input type="text" id="inputPesquisa" placeholder="Pesquisar console..." onkeyup="pesquisar()">
+                    </div>
+
+                    <div id="listaJogos">
+                    </div>
+                    <!-- <div class="imagem">
+                        <img src="/assets/images/joystick-de-controlador-de-jogo-gamepad-icone-isolado-3d-render-ilustracao.png" alt="">
+                    </div> -->
                 </div>
-                <div class="imagem">
-                    <img src="/assets/images/joystick-de-controlador-de-jogo-gamepad-icone-isolado-3d-render-ilustracao.png" alt="">
-                </div>
-            </div>
-            <div class="card-coment">
-                <input class="insert-name" type="text" placeholder="Digite seu nome...">
-                <hr>
-                <textarea placeholder="Digite seu comentário..."></textarea>
-                <button>postar</button>
             </div>
         </section>
 
     <footer>        
-    </footer> 
-
-    <script src="js.put.js"></script>
+    </footer>
+    
     <script src="js.delete.js"></script>
     <script src="../js/index.js"></script>
 </body>

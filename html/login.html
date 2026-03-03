@@ -13,31 +13,33 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form onsubmit="POSTcadastro(event)"> 
+				<form onsubmit="cadastrarUsuario(event)"> 
 					<label for="chk" aria-hidden="true">Cadastro</label>
+					<p id="mensagem1"></p>
     				<input type="text" name="txt" id="nome" placeholder="Nome de usuário" required="">
  					<input type="email" name="email" id="email" placeholder="Email" required="">
   					<input type="tel" name="broj" id="telefone" placeholder="Telefone" required="">
     				<input type="password" name="pswd" id="senha" placeholder="Senha" required=""> 
     				<button type="submit">Cadastrar</button>
 				</form>
-				<p id="mensagem1"></p>
 			</div>
 
 			<div class="login">
-				<form on>
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
+				<form onsubmit="PUTdados(event)">
+					<label for="chk" aria-hidden="true">Atualizar Dados</label>
+					<p id="mensagem2"></p>
+					<input type="email" name="email" placeholder="Email" required="" id="editarEmail">
+					<input type="password" name="pswd" placeholder="Password" required="" id="editarSenha">
 					<a href="index.html">
-						<button type="submit">Login</button>
+						<button>Atualizar</button>
 					</a>
 				</form>
-			</div> 
+			</div>
 	</div>
 
     <!-- <script src="../js/get.js"></script> -->
 	<script src="../js/post.js"></script>
+	<script src="../js/put.js"></script>
 </body>
 
 </html>

@@ -1,49 +1,52 @@
-const modal1 = document.querySelector('.modal-container1')
-const modal2 = document.querySelector('.modal-container2')
-const modal3 = document.querySelector('.modal-container3')
-const modal4 = document.querySelector('.modal-container4')
-const overlay = document.getElementById('overlay')
+let products = [
+  { id: 1, name: "Xbox", description: "Xbox 360" },
+  { id: 2, name: "Playstation", description: "Playstation 2" },
+  { id: 3, name: "Nintendo", description: "Nintendo 64" },
+  { id: 4, name: "Sega", description: "Master System" }
+];
 
-// MODAL 1
-function openModal1() {
-    modal1.classList.add('active')
-    overlay.classList.add('active')
+// Função para atualizar a tela
+function renderizar(lista = products) {
+    const container = document.getElementById('listaJogos');
+    container.innerHTML = "";
+
+    lista.forEach(item => {
+        container.innerHTML += `
+            <div class="console-card">
+                <div>
+                    <strong>${item.name}</strong><br>
+                    <small>${item.description}</small>
+                </div>
+                <button class="btn-delete" onclick="removerJogo(${item.id})">Deletar</button>
+            </div>
+        `;
+    });
 }
 
-function closeModal1() {
-    modal1.classList.remove('active')
-    overlay.classList.remove('active')
+// Simulação de DELETE
+function removerJogo(id) {
+    // 1. Simula a lógica de rota
+    console.log(`DELETE -> /products/${id}`);
+    document.getElementById('status-log').innerText = `Enviado DELETE para ID: ${id}`;
+
+    // 2. Remove do array local
+    products = products.filter(p => p.id !== id);
+
+    // 3. Atualiza a interface
+    renderizar();
 }
 
-// MODAL 2
-function openModal2() {
-    modal2.classList.add('active')
-    overlay.classList.add('active')
+// Simulação de PESQUISA (Filtro dinâmico)
+function pesquisar() {
+    const termo = document.getElementById('inputPesquisa').value.toLowerCase();
+    
+    const filtrados = products.filter(p => 
+        p.name.toLowerCase().includes(termo) || 
+        p.description.toLowerCase().includes(termo)
+    );
+
+    renderizar(filtrados);
 }
 
-function closeModal2() {
-    modal2.classList.remove('active')
-    overlay.classList.remove('active')
-}
-
-// MODAL 3
-function openModal3() {
-    modal3.classList.add('active')
-    overlay.classList.add('active')
-}
-
-function closeModal3() {
-    modal3.classList.remove('active')
-    overlay.classList.remove('active')
-}
-
-// MODAL 4
-function openModal4() {
-    modal4.classList.add('active')
-    overlay.classList.add('active')
-}
-
-function closeModal4() {
-    modal4.classList.remove('active')
-    overlay.classList.remove('active')
-}
+// Inicializa a página
+renderizar();
