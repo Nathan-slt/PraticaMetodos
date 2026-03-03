@@ -19,11 +19,16 @@ a{
     color: white;
 }
 
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
 span{
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 700;
-    margin-right: 15rem;
     text-shadow: 2px 2px 5px #b71f57
 }
 
@@ -34,24 +39,28 @@ span:hover{
 }
 
 .barra{
-    max-width: max-content;
-    margin: auto;
-    padding: 1rem 10rem;
-    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #1b1d1f;
-    text-transform: uppercase;
+    align-items: center;
+    justify-content: center; /* centraliza tudo */
     position: fixed;
+    top: 0;
+    background: #1b1d1f;
+    text-transform: uppercase;
     z-index: 100;
+    
+}  
+
+.logo{
+    position: absolute;
+    left: 4rem;
 }
 
 
 .menu{
     display: flex;
-    flex-direction: row;
-    gap: 15rem;
+    gap: 3rem;
     font-weight: 700;
 }
 
@@ -62,13 +71,15 @@ span:hover{
 }
 
 .login{
-    margin-left: 14rem;
     width: auto;
     height: auto;
-    padding: 1.1rem;
-    background: linear-gradient(90deg, #b71f57, #b71f57);
+    padding: 0.5rem;
+    background-color: #b71f57;
     border-radius: 1rem;
     font-weight: 600;
+    position: absolute;
+    right: 0.3rem;
+    
 }
 
 .login:hover{
@@ -192,3 +203,29 @@ section{
     transform: translateY(-10px);
 }
 
+/* Sobre e/ou comentários */
+.comentarios{
+    background-color: #111314;
+    padding: .9rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    font-size: 2.1rem;
+    text-shadow: 0 0 8px #b71f57;
+}
+
+.comentarios:hover{
+    text-shadow: 0 2px 10px #1c4286 ;
+}
+
+.sobre{
+    background-color: #111314;
+}
+
+.sobre img{
+    width: 30rem;
+    height: auto;
+}

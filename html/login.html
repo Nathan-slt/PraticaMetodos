@@ -13,19 +13,19 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form>
+				<form onsubmit="GETusuario(event)"> 
 					<label for="chk" aria-hidden="true">Cadastro</label>
-					<input type="text" name="txt" id="nome" placeholder="Nome de usuário" required="">
-					<input type="email" name="email" id="email" placeholder="Email" required="">
-          			<input type="number" name="broj" id="telefone" placeholder="Telefone" required="">
-					<input type="password" name="pswd" id="senha" placeholder="Senha" required=""> 
-					<button type="button" onclick="validarCadastro()">Cadastro</button>
+    				<input type="text" name="txt" id="nome" placeholder="Nome de usuário" required="">
+ 					<input type="email" name="email" id="email" placeholder="Email" required="">
+  					<input type="tel" name="broj" id="telefone" placeholder="Telefone" required="">
+    				<input type="password" name="pswd" id="senha" placeholder="Senha" required=""> 
+    				<button type="submit">Cadastrar</button>
 				</form>
 				<p id="mensagem1"></p>
 			</div>
 
 			<div class="login">
-				<form>
+				<form on>
 					<label for="chk" aria-hidden="true">Login</label>
 					<input type="email" name="email" placeholder="Email" required="">
 					<input type="password" name="pswd" placeholder="Password" required="">
@@ -35,6 +35,9 @@
 				</form>
 			</div> 
 	</div>
+
+    <!-- <script src="../js/get.js"></script> -->
+	<script src="../js/get_post.js"></script>
 </body>
 
 </html>

@@ -10,18 +10,18 @@
 <body>
     <!-- vai ser só as cores que vamos usar. 1- #b71f57 2-#007190 3-#1c4286 4-#111314  -->
     <header>
-    <nav class="barra">
-        <span>bebos game</span>
-        <nav class="menu">
-            <a href="#">ínicio</a>
-            <a href="#">Catálogo</a>
-            <a href="#">Sobre</a>
-        </nav>
-        <div class="dot"></div>
-        <a  class="login" href="html/login.html">Login</a>
-    </nav> 
-    </header>
+<nav class="barra">
+    <span class="logo">BEBOS GAME</span>
 
+    <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Sobre</a>
+    </div>
+
+    <a class="login" href="html/login.html">Login</a>
+</nav> 
+    </header>
     <main class="banner">
         <img src="assets/images/gamepad-controlador-de-jogo-icone-isolado-3d-render-ilustracao.png" alt="Controle de videogame">
         <div class="banner-text">
@@ -31,13 +31,25 @@
     </main>
     
     <!-- Card games -->
-    <h2 class="consoles">Catálogo de Consoles</h2>
+    <h2 class="consoles">Consoles Lendários</h2>
     <section>
         <div class="card" onclick="openModal1()">
             <div class="card-game">
                 <img src="assets/images/i413576.png" alt="">
                 <h2>PlayStation 2</h2>
-                <!-- <p>Lançado pela Sony em 2000, é o console de videogame mais vendido da história, com mais de 160 milhões de unidades. Destacou-se pela retrocompatibilidade com o PS1, leitor de DVD integrado e uma vasta biblioteca de jogos, além do seu processador Emotion Engine de 128 bits.</p> -->
+                <div class="modal-container1">
+                    <div class="modal1">
+                        <h3>Info</h3>
+                        <hr />
+                        <span>
+                            Lançado pela Sony em 2000, é o console de videogame mais vendido da história, com mais de 160 milhões de unidades. Destacou-se pela retrocompatibilidade com o PS1, leitor de DVD integrado e uma vasta biblioteca de jogos, além do seu processador Emotion Engine de 128 bits.
+                        </span>
+                        <hr />
+                        <div class="btns">
+                            <button class="btnClose" onclick="closeModal1()">Fechar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -45,7 +57,15 @@
             <div class="card-game">
                 <img src="assets/images/set-of-console-game-device-handheld-portable-free-png.png"  width="700rem" height="auto" alt="">
                 <h2>Nintendo Switch</h2>
-                <!-- <p>É um console híbrido versátil lançado em 2017, funcionando como dispositivo portátil, na TV via dock ou em modo de mesa com controles Joy-Con destacáveis. Disponível nas versões Padrão (V2), OLED (tela superior de 7") e Lite (portátil dedicado), destaca-se por exclusivos como Mario, Zelda e Pokémon. Possui memória expansível e bateria com duração de 4 a 9 horas. </p> -->
+                    <h3>Info</h3>
+                    <hr />
+                    <span>
+                        É um console híbrido versátil lançado em 2017, funcionando como dispositivo portátil, na TV via dock ou em modo de mesa com controles Joy-Con destacáveis. Disponível nas versões Padrão (V2), OLED (tela superior de 7") e Lite (portátil dedicado), destaca-se por exclusivos como Mario, Zelda e Pokémon. Possui memória expansível e bateria com duração de 4 a 9 horas. 
+                    </span>
+                    <hr />
+                    <div class="btns">
+                        <button class="btnClose" onclick="closeModal()">Fechar</button>
+                    </div>
             </div>
         </div>
 
@@ -66,10 +86,21 @@
         </div>
     </section>
 
+    <!-- Sobre -->
+     <h2 class="comentarios">Deixe aqui seu comentário</h2>
+    <section class="sobre">
+        <div class="banner-comentario">
+            <img src="/assets/images/joystick-de-controlador-de-jogo-gamepad-icone-isolado-3d-render-ilustracao.png" alt="">
+            <p>Aqui você deixa sugestões e o que você mais gostou. Agradecemos a sua visita</p>
+        </div>
+    </section>
+
     <footer>        
     </footer> 
 
-    <script src="js/index.js"></script>
+    <script src="js.put.js"></script>
+    <script src="js.delete.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
-</html>
+</html> 

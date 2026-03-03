@@ -1,41 +1,49 @@
-function validarCadastro() {
-    const nome = document.getElementById("nome").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const idade = parseInt(document.getElementById("idade").value);
-    const telefone = document.getElementById("telefone").value.trim();
-    const senha = document.getElementById("senha").value;
-    const mensagem1 = document.getElementById("mensagem1");
+const modal1 = document.querySelector('.modal-container1')
+const modal2 = document.querySelector('.modal-container2')
+const modal3 = document.querySelector('.modal-container3')
+const modal4 = document.querySelector('.modal-container4')
+const overlay = document.getElementById('overlay')
 
-    // Regex simples para validar email
-    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (
-        nome !== "" &&
-        emailValido.test(email) &&
-        idade >= 16 &&
-        telefone.length >= 10 &&
-        senha.length >= 8
-    ) {
-        mensagem1.innerText = "Cadastro Concluído ✅";
-        mensagem1.style.color = "lightgreen";
-    } else {
-        mensagem1.innerText = "Cadastro inválido. Verifique os campos.";
-        mensagem1.style.color = "red";
-    }
+// MODAL 1
+function openModal1() {
+    modal1.classList.add('active')
+    overlay.classList.add('active')
 }
 
-function testeGET(){
-
+function closeModal1() {
+    modal1.classList.remove('active')
+    overlay.classList.remove('active')
 }
 
-function testePOST(){
-
+// MODAL 2
+function openModal2() {
+    modal2.classList.add('active')
+    overlay.classList.add('active')
 }
 
-function testePUT(){
-
+function closeModal2() {
+    modal2.classList.remove('active')
+    overlay.classList.remove('active')
 }
 
-function testeDELETE(){
-    
+// MODAL 3
+function openModal3() {
+    modal3.classList.add('active')
+    overlay.classList.add('active')
+}
+
+function closeModal3() {
+    modal3.classList.remove('active')
+    overlay.classList.remove('active')
+}
+
+// MODAL 4
+function openModal4() {
+    modal4.classList.add('active')
+    overlay.classList.add('active')
+}
+
+function closeModal4() {
+    modal4.classList.remove('active')
+    overlay.classList.remove('active')
 }
