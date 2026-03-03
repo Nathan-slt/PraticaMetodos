@@ -6,6 +6,7 @@
     <title>Métodos na prática</title>
     <link rel="shortcut icon" href="assets/images/BebosGame.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    <!-- Ágatha, Kalel, Kauan e Nathan -->
 </head>
 <body>
     <!-- vai ser só as cores que vamos usar. 1- #b71f57 2-#007190 3-#1c4286 4-#111314  -->
@@ -14,62 +15,45 @@
     <span class="logo">BEBOS GAME</span>
 
     <div class="menu">
-        <a href="#">Início</a>
-        <a href="#">Catálogo</a>
-        <a href="#">Sobre</a>
+        <a href="#banner">Início</a>
+        <a href="#consoles">Catálogo</a>
+        <a href="#sobre-coment">Sobre</a>
     </div>
 
     <a class="login" href="html/login.html">Login</a>
 </nav> 
     </header>
-    <main class="banner">
+    <main class="banner" id="banner">
         <img src="assets/images/gamepad-controlador-de-jogo-icone-isolado-3d-render-ilustracao.png" alt="Controle de videogame">
         <div class="banner-text">
             <h1>Consoles que marcam gerações</h1>
-            <p>OS videogames não são apenas tecnologia comercializada. Na verdade, os jogos possuem a capacidade de desevolver habilidades e gerar memórias.</p>
+            <p>Os videogames não são apenas tecnologia comercializada. Na verdade, os jogos possuem a capacidade de desevolver habilidades e gerar memórias.</p>
         </div>
     </main>
     
     <!-- Card games -->
-    <h2 class="consoles">Consoles Lendários</h2>
+    <h2 class="consoles" id="consoles">Consoles Lendários</h2>
     <section>
-        <div class="card" onclick="openModal1()">
+        <div class="card">
             <div class="card-game">
                 <img src="assets/images/i413576.png" alt="">
                 <h2>PlayStation 2</h2>
                 <div class="modal-container1">
                     <div class="modal1">
-                        <h3>Info</h3>
-                        <hr />
-                        <span>
-                            Lançado pela Sony em 2000, é o console de videogame mais vendido da história, com mais de 160 milhões de unidades. Destacou-se pela retrocompatibilidade com o PS1, leitor de DVD integrado e uma vasta biblioteca de jogos, além do seu processador Emotion Engine de 128 bits.
-                        </span>
-                        <hr />
-                        <div class="btns">
-                            <button class="btnClose" onclick="closeModal1()">Fechar</button>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card" onclick="openModal2()">
+        <div class="card">
             <div class="card-game">
                 <img src="assets/images/set-of-console-game-device-handheld-portable-free-png.png"  width="700rem" height="auto" alt="">
                 <h2>Nintendo Switch</h2>
-                    <h3>Info</h3>
-                    <hr />
-                    <span>
-                        É um console híbrido versátil lançado em 2017, funcionando como dispositivo portátil, na TV via dock ou em modo de mesa com controles Joy-Con destacáveis. Disponível nas versões Padrão (V2), OLED (tela superior de 7") e Lite (portátil dedicado), destaca-se por exclusivos como Mario, Zelda e Pokémon. Possui memória expansível e bateria com duração de 4 a 9 horas. 
-                    </span>
-                    <hr />
-                    <div class="btns">
-                        <button class="btnClose" onclick="closeModal()">Fechar</button>
-                    </div>
+                    <hr/>
             </div>
         </div>
 
-        <div class="card" onclick="openModal3()">
+        <div class="card">
             <div class="card-game">
                 <img src="assets/images/xbox_360_4gb_seminovo_1259_1_d6bae2d4ea0fcfa7bb3ee1b2bad1224d.png" alt="">
                 <h2>Xbox 360</h2>
@@ -77,8 +61,8 @@
             </div>
         </div>
 
-        <div class="card" onclick="openModal4()">
-            <div class="card-game">
+        <div class="card">
+            <div class="card-game" id="card4">
                 <img src="assets/images/n64-console-set-c637a4a088cbb9b91517099951608306-1024-1024.png" alt="">
                 <h2>Nintendo 64</h2>
                 <!-- <p>O Nintendo 64, lançado em 1996, foi um console de 64 bits revolucionário, sendo pioneiro nos gráficos 3D, no uso do controle com joystick analógico e na funcionalidade de vibração. Utilizando cartuchos, destacou-se por jogos icônicos como Super Mario 64.</p> -->
@@ -87,13 +71,25 @@
     </section>
 
     <!-- Sobre -->
-     <h2 class="comentarios">Deixe aqui seu comentário</h2>
-    <section class="sobre">
-        <div class="banner-comentario">
-            <img src="/assets/images/joystick-de-controlador-de-jogo-gamepad-icone-isolado-3d-render-ilustracao.png" alt="">
-            <p>Aqui você deixa sugestões e o que você mais gostou. Agradecemos a sua visita</p>
-        </div>
-    </section>
+     <h2 class="comentarios" id="sobre-coment">Deixe aqui seu comentário</h2>
+        <section class="sobre">
+            <div class="banner-comentario">
+                <div class="texto">
+                    <h2>
+                       Deixe aqui seu comentário sobre a nossa página
+                    </h2>
+                </div>
+                <div class="imagem">
+                    <img src="/assets/images/joystick-de-controlador-de-jogo-gamepad-icone-isolado-3d-render-ilustracao.png" alt="">
+                </div>
+            </div>
+            <div class="card-coment">
+                <input class="insert-name" type="text" placeholder="Digite seu nome...">
+                <hr>
+                <textarea placeholder="Digite seu comentário..."></textarea>
+                <button>postar</button>
+            </div>
+        </section>
 
     <footer>        
     </footer> 

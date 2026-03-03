@@ -13,7 +13,7 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form onsubmit="GETusuario(event)"> 
+				<form onsubmit="POSTcadastro(event)"> 
 					<label for="chk" aria-hidden="true">Cadastro</label>
     				<input type="text" name="txt" id="nome" placeholder="Nome de usuário" required="">
  					<input type="email" name="email" id="email" placeholder="Email" required="">
@@ -30,14 +30,14 @@
 					<input type="email" name="email" placeholder="Email" required="">
 					<input type="password" name="pswd" placeholder="Password" required="">
 					<a href="index.html">
-						<button>Login</button>
+						<button type="submit">Login</button>
 					</a>
 				</form>
 			</div> 
 	</div>
 
     <!-- <script src="../js/get.js"></script> -->
-	<script src="../js/get_post.js"></script>
+	<script src="../js/post.js"></script>
 </body>
 
 </html>
